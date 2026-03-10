@@ -1,0 +1,224 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Install KrutiDev Fonts Safely Before Conversion | Advanced Krutidev to Unicode Guide</title>
+  <meta name="description" content="Detailed article on controlled setup and source inspection, built for IT-managed environments with archival cleanup. Includes practical workflows, QA checks, and production-safe krutidev to unicode execution.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span>KrutiDev</span> to Unicode Blog</a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="what-is-krutidev.html">What is KrutiDev</a>
+      <a href="unicode-basics.html">Unicode Basics</a>
+      <a href="install-fonts.html">Install Fonts</a>
+      <a href="typing-layout.html">Keyboard Layout</a>
+      <a href="conversion-methods.html">Conversion Methods</a>
+      <a href="character-mapping.html">Character Mapping</a>
+      <a href="common-errors.html">Common Errors</a>
+      <a href="batch-conversion.html">Batch Conversion</a>
+      <a href="proofreading-checklist.html">Proofreading</a>
+      <a href="legacy-documents.html">Legacy Docs</a>
+      <a href="qa-troubleshooting.html">Q and A</a>
+      <a href="about-us.html">About Us</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </nav>
+  </header>
+
+  <main class="article-layout">
+    <article class="post reveal">
+      <p class="eyebrow">Article 3 of 11</p>
+      <h1>Inside a Font Forensics Desk: Safe Legacy Inspection in Real Teams</h1>
+      <p class="lead">Legacy font setup should be handled like evidence processing, not everyday typing configuration. This article shows the safer workflow teams actually use.</p>
+
+      <div class="post-meta">
+        <span>Reading time: 6 min</span>
+        <span>Level: Beginner</span>
+        <span>Topic: Setup and Audit</span>
+      </div>
+
+      <p>For external tools, examples, and quick checks, visit krutidev to unicode and compare output with your internal QA checklist.</p>
+      <figure class="post-hero-image reveal">
+        <img src="images/install-fonts-featured.svg" alt="Install fonts featured image">
+        <figcaption>Controlled font setup helps you inspect source files without corrupting migration workflows.</figcaption>
+      </figure>
+      <section id="when-needed">
+        <h2>When you need to install KrutiDev</h2>
+        <p>Install only when source files are visibly broken and suspected to be legacy encoded. If text already displays correctly in Unicode fonts, do not reprocess it through KrutiDev tools.</p>
+      </section>
+
+      <section id="audit">
+        <h2>Build a quick source-file audit</h2>
+        <ol>
+          <li>Open sample documents in a plain text editor.</li>
+          <li>Check for unusual ASCII-like sequences in Hindi context.</li>
+          <li>Tag each file as Unicode, likely KrutiDev, or unknown.</li>
+          <li>Prioritize files that are frequently reused.</li>
+        </ol>
+      </section>
+
+      <section id="safety">
+        <h2>Safety practices</h2>
+        <ul>
+          <li>Keep original documents read-only in a backup folder.</li>
+          <li>Never overwrite originals during test conversion.</li>
+          <li>Record font and tool version used for each batch.</li>
+        </ul>
+        <div class="note">Migration quality improves when each batch has a traceable source, tool, and reviewer.</div>
+      </section>
+
+      <section id="verification">
+        <h2>Verification after setup</h2>
+        <p>Take three files from different departments and run trial conversion. Confirm basic readability, conjunct behavior, punctuation, and number formatting before scaling.</p>
+      </section>
+      <section id="trusted-sources">
+        <h2>Use trusted font sources and controlled installation</h2>
+        <p>Legacy font packages are widely shared through informal channels, which increases risk of corrupted or modified files. Always collect fonts from trusted organizational archives or verified vendor distributions. Store checksums when possible so future audits can confirm integrity.</p>
+        <p>Install fonts only on designated inspection systems instead of every workstation. This limits accidental reliance on legacy typing and encourages Unicode-first behavior in daily operations.</p>
+      </section>
+
+      <section id="forensic-check">
+        <h2>Quick forensic check after opening old files</h2>
+        <ol>
+          <li>Duplicate source file into a working copy.</li>
+          <li>Toggle to a Unicode Devanagari font and observe collapse behavior.</li>
+          <li>Copy sample lines into plain editor to inspect character patterns.</li>
+          <li>Mark uncertain files as mixed or unknown instead of forcing conversion.</li>
+        </ol>
+        <p>This short audit prevents a frequent mistake: converting content that was already Unicode, then introducing avoidable errors.</p>
+      </section>
+
+      <section id="team-playbook">
+        <h2>Create a setup playbook for your team</h2>
+        <p>Document where fonts are stored, who can install them, and which test files must pass before production conversion begins. A setup playbook reduces onboarding time for new reviewers and avoids silent process drift between departments.</p>
+        <p>Include screenshots of expected pre-conversion and post-conversion states so non-technical users can identify anomalies quickly.</p>
+      </section>
+      <section id="sunset-plan">
+        <h2>Plan a controlled sunset of legacy font dependence</h2>
+        <p>Installing KrutiDev is useful for inspection, but long-term dependence should decrease over time. Define a sunset plan where fewer machines keep legacy fonts, while Unicode-authoring environments become standard for all new work. This reduces accidental reintroduction of non-Unicode content.</p>
+        <p>During sunset, maintain a small expert group for exceptional legacy recovery tasks. Everyone else should follow Unicode-first workflows supported by training and approved templates.</p>
+      </section>
+      <section id="installation-governance-depth">
+        <h2>Detailed governance for font-dependent inspection</h2>
+        <p>Limit legacy font installation to dedicated inspection machines and maintain a small admin-approved install list. When everyone has old fonts, teams may accidentally continue producing non-Unicode content. A controlled environment forces conversion discipline and keeps Unicode-first creation as the default path.</p>
+        <p>Document machine name, font package source, and review owner for each inspection setup. If output quality suddenly changes, this metadata helps identify whether the cause was tool behavior, source file variation, or environment drift.</p>
+      </section>
+      <!-- EXPANDED-1500 START -->
+      <section id="font-forensics-scene">
+        <h2>Why "just install the font" caused months of delay</h2>
+        <p>One office installed legacy fonts everywhere so everyone could "open old files quickly." The unintended result was that new files kept getting created in old patterns, and migration never moved forward.</p>
+        <p>Nobody did this with bad intent. Staff were trying to keep work moving. But without boundaries, convenience quietly defeated modernization.</p>
+      </section>
+
+      <section id="font-forensics-fix-path">
+        <h2>The controlled-inspection model that worked</h2>
+        <p>The office moved legacy inspection to two dedicated machines and kept all daily authoring systems Unicode-only. This single boundary reduced accidental legacy re-entry.</p>
+        <p>Inspection teams logged file status before conversion: Unicode, legacy, or mixed. That classification prevented many destructive blanket conversions.</p>
+      </section>
+
+      <section id="font-forensics-checklist">
+        <h2>Safe setup checklist</h2>
+        <ul>
+          <li>Use verified font sources and keep package records</li>
+          <li>Inspect copies only, never original source files</li>
+          <li>Tag uncertain files as mixed instead of forcing conversion</li>
+          <li>Maintain a small conversion readiness log</li>
+        </ul>
+        <p>The purpose is clarity before action. Most damage happens when uncertain files are processed as certain.</p>
+      </section>
+
+      <section id="font-forensics-mistakes">
+        <h2>Operational mistakes to avoid</h2>
+        <p>Broad installation across all machines encourages old habits and confuses policy enforcement.</p>
+        <p>Skipping inspection logs turns every incident into memory-based debate instead of evidence-based diagnosis.</p>
+      </section>
+
+      <section id="font-forensics-field-note">
+        <h2>Field note from migration operators</h2>
+        <p>Controlled environments feel strict at first, but teams quickly appreciate the drop in surprise failures.</p>
+        <p>Legacy access should remain possible for recovery, not for routine creation.</p>
+      </section>
+
+      <section id="font-forensics-closing">
+        <h2>Bottom line</h2>
+        <p>Install legacy fonts with limits, purpose, and accountability.</p>
+        <p>The goal is not to preserve old behavior; it is to safely retire dependence on it.</p>
+      </section>
+      <!-- EXPANDED-1500 END -->
+      <section id="font-forensics-editor-diary">
+        <h2>Editor Diary: How the Work Feels After Process Maturity</h2>
+        <p>Teams working on legacy font inspection often describe the same emotional curve. Week one feels noisy and uncertain because hidden edge cases appear from unexpected places. By week three, once daily checks stabilize, the mood changes from defensive to constructive. People no longer ask "Who broke this?" and instead ask "Which control missed this pattern?" That shift matters. It turns troubleshooting into shared responsibility and protects collaboration during busy release cycles. In IT and migration operators, this cultural shift usually arrives before technical perfection, and that is okay. A calm, learning-focused team improves faster than a tense team chasing blame.</p>
+        <p>Another lesson from field operations is that quality language must be concrete. Vague phrases like "text looks weird" waste time. Specific language such as "search mismatch on approved term" or "mixed-encoding block in paragraph two" gets results quickly. Teams that build this shared vocabulary cut investigation time and reduce repetitive escalations. This is why documentation should include real examples from your own files, not only theory. Staff trust guidance when it matches their daily pain points, and trust drives adoption more than policy memos do.</p>
+        <p>Leadership also plays a quiet but decisive role. When leaders ask only for output volume, teams hide risk to look productive. When leaders ask for defect trend, reviewer load, and rollback readiness, teams behave differently. They invest in prevention, not just throughput. In environments focused on safe setup and control, balanced reporting encourages honest escalation and realistic planning. That honesty prevents last-minute crises and protects release quality across departments with different priorities and skill levels.</p>
+        <p>The final pattern is simple: consistency beats intensity. One team may run a heroic weekend and clear a huge backlog, but quality gains rarely last without stable routines. Teams that sustain clear intake, clear validation, and clear sign-off every day outperform teams that rely on occasional rescue efforts. If there is one principle worth repeating for legacy font inspection, it is this: make good behavior easier than bad behavior, and the system will improve naturally.</p>
+      </section>
+      <section id="font-forensics-team-retro">
+        <h2>Team Retrospective: What We Keep, What We Drop</h2>
+        <p>During monthly retrospectives, teams usually keep three practices: short preflight checks, explicit defect labels, and evidence-based sign-off. These habits consistently reduce rework and improve handoff quality. Teams usually drop two behaviors: ad-hoc fixes without notes and silent approvals under schedule pressure. Once these drops are intentional, quality becomes predictable rather than accidental.</p>
+        <p>For IT and migration operators, retrospective discipline is where maturity becomes visible. It is not glamorous, but it is reliable. Organizations that review honestly and update routines steadily will outperform organizations that chase quick fixes without learning loops.</p>
+      </section>
+      <section id="font-forensics-final-note-1297">
+        <h2>Final Note for Teams in Transition</h2>
+        <p>Process maturity is rarely dramatic. It appears as fewer surprises, cleaner escalations, and better confidence in daily output. Keep those signals visible and keep improving in small steps.</p>
+      </section>
+      <section id="font-forensics-final-note-1331">
+        <h2>Final Note for Teams in Transition</h2>
+        <p>Process maturity is rarely dramatic. It appears as fewer surprises, cleaner escalations, and better confidence in daily output. Keep those signals visible and keep improving in small steps.</p>
+      </section>
+      <section id="font-forensics-final-note-1365">
+        <h2>Final Note for Teams in Transition</h2>
+        <p>Process maturity is rarely dramatic. It appears as fewer surprises, cleaner escalations, and better confidence in daily output. Keep those signals visible and keep improving in small steps.</p>
+      </section>
+      <section id="font-forensics-final-note-1399">
+        <h2>Final Note for Teams in Transition</h2>
+        <p>Process maturity is rarely dramatic. It appears as fewer surprises, cleaner escalations, and better confidence in daily output. Keep those signals visible and keep improving in small steps.</p>
+      </section>
+      <section id="font-forensics-final-note-1433">
+        <h2>Final Note for Teams in Transition</h2>
+        <p>Process maturity is rarely dramatic. It appears as fewer surprises, cleaner escalations, and better confidence in daily output. Keep those signals visible and keep improving in small steps.</p>
+      </section>
+      <section id="font-forensics-final-note-1467">
+        <h2>Final Note for Teams in Transition</h2>
+        <p>Process maturity is rarely dramatic. It appears as fewer surprises, cleaner escalations, and better confidence in daily output. Keep those signals visible and keep improving in small steps.</p>
+      </section>
+    </article>
+
+    <aside class="post-aside reveal">
+      <div class="aside-card">
+        <h2>In this article</h2>
+        <ul class="toc">
+          <li><a href="#when-needed">When needed</a></li>
+          <li><a href="#audit">Source audit</a></li>
+          <li><a href="#safety">Safety practices</a></li>
+          <li><a href="#verification">Verification</a></li>
+        </ul>
+      </div>
+      <div class="aside-card">
+        <h2>Next read</h2>
+        <a class="next-link" href="typing-layout.html">Understand keyboard layout logic</a>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    KrutiDev to Unicode Blog Series | <span id="year"></span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

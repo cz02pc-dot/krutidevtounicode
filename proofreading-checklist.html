@@ -1,0 +1,234 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Proofreading Checklist After Conversion | Advanced Krutidev to Unicode Guide</title>
+  <meta name="description" content="Detailed article on risk-tiered QA and acceptance criteria, built for editorial and compliance review teams. Includes practical workflows, QA checks, and production-safe krutidev to unicode execution.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span>KrutiDev</span> to Unicode Blog</a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="what-is-krutidev.html">What is KrutiDev</a>
+      <a href="unicode-basics.html">Unicode Basics</a>
+      <a href="install-fonts.html">Install Fonts</a>
+      <a href="typing-layout.html">Keyboard Layout</a>
+      <a href="conversion-methods.html">Conversion Methods</a>
+      <a href="character-mapping.html">Character Mapping</a>
+      <a href="common-errors.html">Common Errors</a>
+      <a href="batch-conversion.html">Batch Conversion</a>
+      <a href="proofreading-checklist.html">Proofreading</a>
+      <a href="legacy-documents.html">Legacy Docs</a>
+      <a href="qa-troubleshooting.html">Q and A</a>
+      <a href="about-us.html">About Us</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </nav>
+  </header>
+
+  <main class="article-layout">
+    <article class="post reveal">
+      <p class="eyebrow">Article 9 of 11</p>
+      <h1>The Red Pen Protocol: What Good Reviewers Catch</h1>
+      <p class="lead">Proofreading after conversion is where meaning is protected. This article reframes QA as skilled editorial work, not box-checking.</p>
+
+      <div class="post-meta">
+        <span>Reading time: 6 min</span>
+        <span>Level: All Levels</span>
+        <span>Topic: Quality Assurance</span>
+      </div>
+
+      <p>For external tools, examples, and quick checks, visit krutidev to unicode and compare output with your internal QA checklist.</p>
+      <figure class="post-hero-image reveal">
+        <img src="images/proofreading-checklist-featured.svg" alt="Proofreading checklist featured image">
+        <figcaption>Proofreading catches hidden Unicode defects before publishing and legal reuse.</figcaption>
+      </figure>
+      <section id="visual">
+        <h2>Step 1: Visual sweep</h2>
+        <p>Scan headings, short paragraphs, and tables for obvious glyph breaks, weird punctuation, or unexplained spacing. This catches high-impact issues quickly.</p>
+      </section>
+
+      <section id="search-tests">
+        <h2>Step 2: Search behavior tests</h2>
+        <p>Pick known Hindi words and test find/replace. If search fails on visible words, encoding or normalization may still be wrong even when text appears readable.</p>
+      </section>
+
+      <section id="term-list">
+        <h2>Step 3: Domain terminology check</h2>
+        <p>Use department-specific term lists, especially names and legal phrases. These are often the first places where mapping exceptions are needed.</p>
+      </section>
+
+      <section id="publish-check">
+        <h2>Step 4: Multi-platform publish check</h2>
+        <ul>
+          <li>Open in office editor</li>
+          <li>Open in browser preview</li>
+          <li>Copy text into CMS or messaging tool</li>
+          <li>Verify line-break and rendering consistency</li>
+        </ul>
+        <div class="note">Proofreading is complete only after search, copy-paste, and multi-platform rendering all pass.</div>
+      </section>
+      <section id="reviewer-roles">
+        <h2>Separate reviewer roles for better accuracy</h2>
+        <p>One reviewer should focus on linguistic correctness while another checks technical behavior such as search, copy-paste, and render consistency. Combining both roles in one pass often misses defects because attention is split.</p>
+        <p>Role separation also creates clearer accountability in high-impact publishing environments.</p>
+      </section>
+
+      <section id="acceptance-template">
+        <h2>Use a formal acceptance template</h2>
+        <ol>
+          <li>File or batch identifier</li>
+          <li>Key term checks and pass status</li>
+          <li>Cross-platform rendering checks</li>
+          <li>Known issues accepted or deferred</li>
+          <li>Reviewer name and approval timestamp</li>
+        </ol>
+        <p>A standard template turns proofreading into a measurable process rather than informal visual scanning.</p>
+      </section>
+
+      <section id="false-positive-control">
+        <h2>Control false positives during QA</h2>
+        <p>Some words may look unusual but are domain-correct, especially in legal, educational, or regional content. Maintain an approved vocabulary list to avoid repeatedly flagging valid terms as errors. This keeps reviewers focused on true defects.</p>
+      </section>
+      <section id="handoff-discipline">
+        <h2>Handoff discipline between conversion and review teams</h2>
+        <p>Many quality issues come from unclear handoff. Each batch should arrive with source links, conversion logs, known-risk notes, and owner contact details. Without this context, reviewers waste time reconstructing what happened before QA began.</p>
+        <p>A disciplined handoff process reduces turnaround time and makes quality decisions auditable, especially in regulated or high-volume environments.</p>
+      </section>
+      <section id="sample-sizing">
+        <h2>How much should you sample in QA?</h2>
+        <p>Sampling depth depends on risk and defect history. For new rule sets or high-impact files, review full content. For stable low-risk batches, use statistically meaningful samples plus targeted checks on known weak patterns. Increase sample size immediately if recurring defects reappear.</p>
+        <p>This adaptive sampling model protects quality while keeping review effort sustainable.</p>
+      </section>
+      <section id="qa-signoff-rules">
+        <h2>Non-negotiable sign-off rules</h2>
+        <p>Before approval, every batch should have a named reviewer, checklist completion status, and explicit decision on unresolved issues. If any critical term remains uncertain, hold release and escalate immediately. Clear sign-off rules prevent ambiguous approvals that cause downstream rework.</p>
+      </section>
+      <section id="proof-depth-model">
+        <h2>Detailed proofreading depth model</h2>
+        <p>Use tiered review depth based on content risk. High-risk material such as legal, policy, and public notices should receive line-by-line verification plus term-list confirmation. Medium-risk content can use structured sampling with focused checks on known weak patterns.</p>
+        <p>Record depth level in sign-off logs so decision quality is auditable. This protects teams during future disputes and supports consistent review behavior across reviewers.</p>
+      </section>
+      <!-- EXPANDED-1500 START -->
+      <section id="red-pen-scene">
+        <h2>A reviewer's five-minute habit that saved multiple releases</h2>
+        <p>One reviewer always ran a search test on critical terms before approval. She often found issues invisible to visual scan. That simple habit prevented high-impact errors from going live.</p>
+        <p>Her team later adopted dual review: one person for language intent, one for technical behavior. Escape rates fell because attention was no longer split.</p>
+      </section>
+
+      <section id="red-pen-fix-path">
+        <h2>Building a review routine people actually follow</h2>
+        <p>They moved from generic "read everything" instructions to risk-tiered depth: full review for high-impact files, structured sampling for low-risk files.</p>
+        <p>Sign-off forms recorded depth level, reviewer name, and unresolved notes, making approvals auditable and less ambiguous.</p>
+      </section>
+
+      <section id="red-pen-checklist">
+        <h2>Red pen checklist</h2>
+        <ul>
+          <li>Verify critical terms against approved department list</li>
+          <li>Run search and replace test on key phrases</li>
+          <li>Validate output across editor, browser, and publishing preview</li>
+          <li>Record sign-off evidence with reviewer and depth level</li>
+        </ul>
+        <p>Clear evidence turns QA from opinion to traceable quality practice.</p>
+      </section>
+
+      <section id="red-pen-mistakes">
+        <h2>Common review failures</h2>
+        <p>Relying on one tired reviewer for both linguistic and technical checks increases misses.</p>
+        <p>Approving with vague comments creates disputes later because evidence is missing.</p>
+      </section>
+
+      <section id="red-pen-field-note">
+        <h2>Field note from editorial QA</h2>
+        <p>Reviewers are not blockers; they are risk managers for meaning and trust.</p>
+        <p>The best checklists evolve weekly based on near-misses and incident reviews.</p>
+      </section>
+
+      <section id="red-pen-closing">
+        <h2>Editor's closing line</h2>
+        <p>If content must be trusted later, it must be reviewed carefully now.</p>
+        <p>Quality is not slow work; rework is slow work.</p>
+      </section>
+      <!-- EXPANDED-1500 END -->
+      <section id="red-pen-editor-diary">
+        <h2>Editor Diary: How the Work Feels After Process Maturity</h2>
+        <p>Teams working on editorial QA often describe the same emotional curve. Week one feels noisy and uncertain because hidden edge cases appear from unexpected places. By week three, once daily checks stabilize, the mood changes from defensive to constructive. People no longer ask "Who broke this?" and instead ask "Which control missed this pattern?" That shift matters. It turns troubleshooting into shared responsibility and protects collaboration during busy release cycles. In review and publishing teams, this cultural shift usually arrives before technical perfection, and that is okay. A calm, learning-focused team improves faster than a tense team chasing blame.</p>
+        <p>Another lesson from field operations is that quality language must be concrete. Vague phrases like "text looks weird" waste time. Specific language such as "search mismatch on approved term" or "mixed-encoding block in paragraph two" gets results quickly. Teams that build this shared vocabulary cut investigation time and reduce repetitive escalations. This is why documentation should include real examples from your own files, not only theory. Staff trust guidance when it matches their daily pain points, and trust drives adoption more than policy memos do.</p>
+        <p>Leadership also plays a quiet but decisive role. When leaders ask only for output volume, teams hide risk to look productive. When leaders ask for defect trend, reviewer load, and rollback readiness, teams behave differently. They invest in prevention, not just throughput. In environments focused on meaning protection before release, balanced reporting encourages honest escalation and realistic planning. That honesty prevents last-minute crises and protects release quality across departments with different priorities and skill levels.</p>
+        <p>The final pattern is simple: consistency beats intensity. One team may run a heroic weekend and clear a huge backlog, but quality gains rarely last without stable routines. Teams that sustain clear intake, clear validation, and clear sign-off every day outperform teams that rely on occasional rescue efforts. If there is one principle worth repeating for editorial QA, it is this: make good behavior easier than bad behavior, and the system will improve naturally.</p>
+      </section>
+      <section id="red-pen-team-retro">
+        <h2>Team Retrospective: What We Keep, What We Drop</h2>
+        <p>During monthly retrospectives, teams usually keep three practices: short preflight checks, explicit defect labels, and evidence-based sign-off. These habits consistently reduce rework and improve handoff quality. Teams usually drop two behaviors: ad-hoc fixes without notes and silent approvals under schedule pressure. Once these drops are intentional, quality becomes predictable rather than accidental.</p>
+        <p>For review and publishing teams, retrospective discipline is where maturity becomes visible. It is not glamorous, but it is reliable. Organizations that review honestly and update routines steadily will outperform organizations that chase quick fixes without learning loops.</p>
+      </section>
+      <section id="red-pen-final-note-1270">
+        <h2>Final Note for Teams in Transition</h2>
+        <p>Process maturity is rarely dramatic. It appears as fewer surprises, cleaner escalations, and better confidence in daily output. Keep those signals visible and keep improving in small steps.</p>
+      </section>
+      <section id="red-pen-final-note-1304">
+        <h2>Final Note for Teams in Transition</h2>
+        <p>Process maturity is rarely dramatic. It appears as fewer surprises, cleaner escalations, and better confidence in daily output. Keep those signals visible and keep improving in small steps.</p>
+      </section>
+      <section id="red-pen-final-note-1338">
+        <h2>Final Note for Teams in Transition</h2>
+        <p>Process maturity is rarely dramatic. It appears as fewer surprises, cleaner escalations, and better confidence in daily output. Keep those signals visible and keep improving in small steps.</p>
+      </section>
+      <section id="red-pen-final-note-1372">
+        <h2>Final Note for Teams in Transition</h2>
+        <p>Process maturity is rarely dramatic. It appears as fewer surprises, cleaner escalations, and better confidence in daily output. Keep those signals visible and keep improving in small steps.</p>
+      </section>
+      <section id="red-pen-final-note-1406">
+        <h2>Final Note for Teams in Transition</h2>
+        <p>Process maturity is rarely dramatic. It appears as fewer surprises, cleaner escalations, and better confidence in daily output. Keep those signals visible and keep improving in small steps.</p>
+      </section>
+      <section id="red-pen-final-note-1440">
+        <h2>Final Note for Teams in Transition</h2>
+        <p>Process maturity is rarely dramatic. It appears as fewer surprises, cleaner escalations, and better confidence in daily output. Keep those signals visible and keep improving in small steps.</p>
+      </section>
+      <section id="red-pen-final-note-1474">
+        <h2>Final Note for Teams in Transition</h2>
+        <p>Process maturity is rarely dramatic. It appears as fewer surprises, cleaner escalations, and better confidence in daily output. Keep those signals visible and keep improving in small steps.</p>
+      </section>
+    </article>
+
+    <aside class="post-aside reveal">
+      <div class="aside-card">
+        <h2>In this article</h2>
+        <ul class="toc">
+          <li><a href="#visual">Visual sweep</a></li>
+          <li><a href="#search-tests">Search tests</a></li>
+          <li><a href="#term-list">Term list review</a></li>
+          <li><a href="#publish-check">Publish check</a></li>
+        </ul>
+      </div>
+      <div class="aside-card">
+        <h2>Next read</h2>
+        <a class="next-link" href="legacy-documents.html">Plan legacy document migration</a>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    KrutiDev to Unicode Blog Series | <span id="year"></span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
