@@ -296,6 +296,7 @@ $indexBody = @"
       <p class="eyebrow">12 Requested Topics</p>
       <h1>KrutiDev to Unicode Premium Topic Library</h1>
       <p class="lead">All pages now have topic-specific long-form content and corrected featured images in one cohesive premium visual style.</p>
+      <p class="resource-link">If you want a quick conversion check while reading these guides, try <a href="https://krutidev-to-unicode.com/" target="_blank" rel="noopener">krutidev to unicode</a> and then return to the detailed workflow steps here.</p>
     </section>
 
     <section class="posts-grid">
@@ -396,6 +397,7 @@ foreach ($t in $topics) {
   $anchor = (Select-String -InputObject $raw -Pattern 'krutidev to unicode' -SimpleMatch).Count
   '{0}`twords={1}`temptyP={2}`tanchor={3}' -f $t.slug, $wc, $empty, $anchor
 }
+
 
 
 
